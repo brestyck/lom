@@ -34,8 +34,8 @@ func main() {
 		fmt.Println(answers[0])
 	} else {
 		x := read_attempt()
-		if x > len(answers)-1 {
-			fmt.Println(answers[0])
+		if x >= len(answers)-1 {
+			fmt.Println(answers[len(answers)-1])
 		} else {
 			write_attempt(x + 1)
 			fmt.Println(answers[x+1])
